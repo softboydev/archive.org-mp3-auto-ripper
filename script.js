@@ -4,6 +4,6 @@ for(let i = 0; i < A.length; i++){
   let a = A[i]
   O += "curl -L -o " + (i+1) + ".mp3 '"
   O += a
-  O += i < A.length ? "' && " : "'"
+  O += i < A.length-1 ? "' && " : "'"
 }
 console.log(O)
